@@ -19,6 +19,7 @@ let addToCart=(product)=>{
  let productInCart=cart.some((item)=>item.id===product.id);
  console.log("productInCart====>",productInCart);
   if(productInCart){
+    
     setMessage("Item Already Added To Cart!");
     console.log("Message====>",message);
   }
@@ -48,6 +49,10 @@ let clickOnCart=()=>{
   setModalOpen(false);
 }
 let clickOnClose=()=>{
+  if(cart.length===0)
+  {
+    setMessage('');
+  }
   setModalOpen(true);
  
 }
