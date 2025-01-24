@@ -27,7 +27,7 @@ function CartProducts(props) {
               <div className="w-full flex justify-between text-lg font-bold ">
                 <div></div>
                 <div className='flex justify-between p-4'>
-                  <div>TotalAmount</div>
+                  <div>TotalAmount-</div>
                   <div>{props.totalAmount}</div>
                 </div>
                 <div></div>
